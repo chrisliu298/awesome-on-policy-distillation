@@ -40,6 +40,7 @@ As of 2026, OPD is a standard post-training primitive at Alibaba (Qwen3), Xiaomi
   - [Training Frameworks](#training-frameworks)
   - [Code, Tutorials, and Guides](#code-tutorials-and-guides)
 - [Contributing](#contributing)
+- [Citation](#citation)
 
 ## Quick Start by Role
 
@@ -234,6 +235,22 @@ Contributions welcome! Please open a PR if you know of papers, reports, or tools
 
 - **Inclusion criteria:** The work should involve student rollouts as central to the learning signal, or directly enable OPD deployment (cross-tokenizer, frameworks, etc.).
 - **Entry format:** `[Title](url) (Year) — One-line description.`
+
+## Citation
+
+If you find this resource useful, please cite it as:
+
+```bibtex
+@misc{awesome-on-policy-distillation,
+  title = {{awesome-on-policy-distillation}: A Curated Resource for On-Policy Distillation of Large Language Models},
+  author = {{Chris Yuhao Liu}},
+  year = {2026},
+  howpublished = {\url{https://github.com/chrisliu298/awesome-on-policy-distillation}},
+  note = {GitHub repository},
+  organization = {GitHub},
+  url = {https://github.com/chrisliu298/awesome-on-policy-distillation}
+}
+```
 
 ---
 
