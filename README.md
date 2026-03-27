@@ -99,7 +99,7 @@ Many papers span multiple categories. The taxonomy is for orientation, not stric
 
 ## Core OPD Papers
 
-The ~19 papers that define on-policy distillation for LLMs.
+The ~20 papers that define on-policy distillation for LLMs.
 
 ### Foundations
 
@@ -124,6 +124,7 @@ The ~19 papers that define on-policy distillation for LLMs.
 - [OPSD: Self-Distilled Reasoner](https://arxiv.org/abs/2601.18734) (2026) — Single model as both teacher and student via privileged information; no external teacher required.
 - [SDFT: Self-Distillation Enables Continual Learning](https://arxiv.org/abs/2601.19897) (2026) — Demonstration-conditioned self-teaching for continual learning with less forgetting.
 - [SDPO: Reinforcement Learning via Self-Distillation](https://arxiv.org/abs/2601.20802) (2026) — Converts textual feedback into dense self-teacher signals for RL-like training.
+- [Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?](https://arxiv.org/abs/2603.24472) (2026) — Traces self-distillation failures to suppression of epistemic verbalization; task coverage determines whether conciseness helps or hurts.
 - [OPSDC: On-Policy Self-Distillation for Reasoning Compression](https://arxiv.org/abs/2603.05433) (2026) — Compresses verbose reasoning using concise privileged self-teachers.
 - [GATES: Self-Distillation under Privileged Context with Consensus Gating](https://arxiv.org/abs/2602.20574) (2026) — Consensus-gated asymmetric-context self-distillation without labels or rewards.
 
@@ -254,4 +255,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-03-22. Coverage: core OPD papers, adjacent work, technical reports, and tooling through March 2026.*
+*Last updated: 2026-03-26. Coverage: core OPD papers, adjacent work, technical reports, and tooling through March 2026.*
