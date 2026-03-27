@@ -47,7 +47,7 @@ As of 2026, OPD is a standard post-training primitive at Alibaba (Qwen3), Xiaomi
 | Role | Start With | Key Resources |
 |---|---|---|
 | New to distillation | Definition above, then the [reading path](#start-here) | [Start Here](#start-here) |
-| Researcher surveying the field | [Core OPD Papers](#core-opd-papers) for the canonical 19 | [Taxonomy](#taxonomy) for a structured map |
+| Researcher surveying the field | [Core OPD Papers](#core-opd-papers) for the canonical 21 | [Taxonomy](#taxonomy) for a structured map |
 | Building an OPD pipeline | [TRL](https://huggingface.co/docs/trl)'s GKD trainer to start | [NeMo-RL](https://docs.nvidia.com/nemo/rl/latest/about/algorithms/on-policy-distillation.html) or [veRL](https://verl.readthedocs.io/en/latest/advance/async-on-policy-distill.html) for scale |
 | Evaluating OPD for post-training | [Technical Reports](#technical-reports-and-industrial-recipes) for who is shipping it | [Core OPD Papers](#core-opd-papers) for algorithmic foundations |
 
@@ -61,8 +61,8 @@ The fastest path to understanding the field:
    You will understand the basic student-rollout + teacher-supervision loop.
 2. **Practical intuition** — [Thinking Machines blog](https://thinkingmachines.ai/blog/on-policy-distillation/).
    The clearest end-to-end explanation of why and when to use OPD.
-3. **Limitations of vanilla OPD** — [Black-Box OPD](https://arxiv.org/abs/2511.10643), [Veto](https://arxiv.org/abs/2601.07155), [Entropy-Aware OPD](https://arxiv.org/abs/2603.07079).
-   You will learn what breaks: instability, diversity collapse, no-logit settings.
+3. **Limitations of vanilla OPD** — [Black-Box OPD](https://arxiv.org/abs/2511.10643), [Veto](https://arxiv.org/abs/2601.07155), [Entropy-Aware OPD](https://arxiv.org/abs/2603.07079), [Revisiting OPD](https://arxiv.org/abs/2603.25562).
+   You will learn what breaks: instability, diversity collapse, no-logit settings, sampled-token failure modes.
 4. **Self-distillation** — [OPSD](https://arxiv.org/abs/2601.18734), [SDFT](https://arxiv.org/abs/2601.19897), [SDPO](https://arxiv.org/abs/2601.20802).
    Drop the external teacher entirely.
 5. **Context and experience** — [OPCD](https://arxiv.org/abs/2602.12275) and [OEL](https://arxiv.org/abs/2603.16856).
@@ -78,7 +78,7 @@ The fastest path to understanding the field:
 
 | Teacher Type | Papers |
 |---|---|
-| External white-box | MiniLLM, GKD, Veto, Entropy-Aware OPD, ExOPD, REOPOLD, PACED, Prefix OPD |
+| External white-box | MiniLLM, GKD, Veto, Entropy-Aware OPD, ExOPD, REOPOLD, PACED, Prefix OPD, Revisiting OPD |
 | External black-box | Black-Box OPD / GAD, OVD |
 | Self-teacher with privileged context | OPSD, SDFT, SDPO, OPSDC, GATES, pi-Distill |
 | Context-conditioned | OPCD, OEL |
@@ -99,7 +99,7 @@ Many papers span multiple categories. The taxonomy is for orientation, not stric
 
 ## Core OPD Papers
 
-The ~20 papers that define on-policy distillation for LLMs.
+The ~21 papers that define on-policy distillation for LLMs.
 
 ### Foundations
 
@@ -118,6 +118,7 @@ The ~20 papers that define on-policy distillation for LLMs.
 - [ExOPD: Learning beyond Teacher via Generalized On-Policy Distillation with Reward Extrapolation](https://arxiv.org/abs/2602.12125) (2026) — Casts OPD as dense KL-constrained RL; reward scaling enables teacher-surpassing behavior.
 - [REOPOLD: Scaling Reasoning Efficiently via Relaxed On-Policy Distillation](https://arxiv.org/abs/2603.11137) (2026) — Relaxes strict imitation with reward clipping, entropy-based dynamic sampling, and explore-to-refine training.
 - [PACED: Distillation at the Frontier of Student Competence](https://arxiv.org/abs/2603.11178) (2026) — Pass-rate weighting focuses learning on the student's competence frontier.
+- [Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes](https://arxiv.org/abs/2603.25562) (2026) — Truncated reverse-KL with teacher top-K local support matching; fixes imbalanced signals, unreliable teacher guidance, and tokenizer mismatch in sampled-token OPD.
 
 ### Self-Distillation
 
