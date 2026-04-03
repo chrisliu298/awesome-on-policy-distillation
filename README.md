@@ -135,6 +135,7 @@ The ~21 papers that define on-policy distillation for LLMs.
 - [Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?](https://arxiv.org/abs/2603.24472) (2026) — Traces self-distillation failures to suppression of epistemic verbalization; task coverage determines whether conciseness helps or hurts.
 - [OPSDC: On-Policy Self-Distillation for Reasoning Compression](https://arxiv.org/abs/2603.05433) (2026) — Compresses verbose reasoning using concise privileged self-teachers.
 - [GATES: Self-Distillation under Privileged Context with Consensus Gating](https://arxiv.org/abs/2602.20574) (2026) — Consensus-gated asymmetric-context self-distillation without labels or rewards.
+- [HDPO: Hybrid Distillation Policy Optimization via Privileged Self-Distillation](https://arxiv.org/abs/2603.23871) (2026) — Privileged self-distillation targeting cliff prompts where RL gradients vanish; provably recovers the KL-regularized optimal policy.
 
 ### Context and Experience Internalization
 
@@ -176,6 +177,8 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [TSD-KD: Explain in Your Own Words](https://arxiv.org/abs/2603.13260) (2026) — Student proposes candidates, teacher reranks, selective token distillation.
 - [SSD: Embarrassingly Simple Self-Distillation Improves Code Generation](https://arxiv.org/abs/2604.01193) (2026) — Temperature-shifted self-sampling plus SFT with no teacher or verifier; identifies precision-exploration conflict in token distributions.
 - [AdaSwitch: Balancing Exploration and Guidance in KD via Adaptive Switching](https://arxiv.org/abs/2510.07842) (2025) — Adaptively switches between on-policy student rollouts and off-policy teacher data using a context-aware divergence threshold.
+- [DDT: Towards On-Policy SFT via Distribution Discriminant Theory](https://arxiv.org/abs/2602.12222) (2026) — In-Distribution Finetuning and Hinted Decoding realign training data to the student's evolving distribution; matches offline RL at SFT cost.
+- [DASD: Distribution-Aligned Sequence Distillation for Superior Long-CoT Reasoning](https://arxiv.org/abs/2601.09088) (2026) — On-policy correction pipeline addressing distribution mismatch, capacity misalignment, and exposure bias in sequence-level CoT distillation.
 
 ### Preference, Reward-Guided, and Hybrid RL+KD
 
@@ -187,6 +190,10 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [Multi-Token Prediction via Self-Distillation](https://arxiv.org/abs/2602.06019) (2026) — Online self-distillation for multi-token prediction and faster inference.
 - [ORPO-Distill: Mixed-Policy Preference Optimization for Cross-Architecture LLM Distillation](https://arxiv.org/abs/2509.25100) (2025) — Mixed-policy teacher/student preference distillation using student-generated outputs; enables black-box cross-architecture transfer.
 - [SRPO: Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing](https://arxiv.org/abs/2604.02288) (2026) — Routes correct student rollouts to reward-based RL and failed ones to self-distillation; unifies GRPO and SDPO.
+- [KETCHUP: K-Step Return Estimation for Sequential Knowledge Distillation](https://arxiv.org/abs/2504.19024) (2025) — K-step return via Bellman equation replaces high-variance single-step REINFORCE in sequence-level OPD.
+- [Rethinking LLM Distillation: A Constrained MDP Perspective](https://arxiv.org/abs/2509.22921) (2025) — Maximizes task reward subject to hard KL constraint against the teacher; avoids manual Lagrangian tuning.
+- [RLKD: Distilling LLMs' Reasoning via Reinforcement Learning](https://arxiv.org/abs/2505.16142) (2025) — Generative Structure Reward Model captures multi-branch reasoning structure on student rollouts; outperforms SFT-RL pipelines on 0.1% data.
+- [LUFFY: Learning to Reason under Off-Policy Guidance](https://arxiv.org/abs/2504.14945) (2025) — Mixed-policy GRPO combining on-policy rollouts with off-policy teacher traces via regularized importance sampling.
 
 ### Agent Distillation, Multimodal, and Other Extensions
 
