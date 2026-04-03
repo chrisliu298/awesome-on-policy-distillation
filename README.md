@@ -19,6 +19,7 @@ As of 2026, OPD is a standard post-training primitive at Alibaba (Qwen3), Xiaomi
 
 - [Quick Start by Role](#quick-start-by-role)
 - [Start Here](#start-here)
+- [Surveys](#surveys)
 - [Taxonomy](#taxonomy)
   - [By Teacher Type](#by-teacher-type)
   - [By Primary Goal](#by-primary-goal)
@@ -57,6 +58,8 @@ As of 2026, OPD is a standard post-training primitive at Alibaba (Qwen3), Xiaomi
 
 The fastest path to understanding the field:
 
+0. **Survey** — [OPD Survey](https://arxiv.org/abs/2604.00626).
+   Comprehensive map of the field: taxonomy, methods, and open problems.
 1. **Foundations** — [MiniLLM](https://arxiv.org/abs/2306.08543) and [GKD](https://arxiv.org/abs/2306.13649).
    You will understand the basic student-rollout + teacher-supervision loop.
 2. **Practical intuition** — [Thinking Machines blog](https://thinkingmachines.ai/blog/on-policy-distillation/).
@@ -71,6 +74,10 @@ The fastest path to understanding the field:
    Cut compute 2x-47x.
 7. **Industrial patterns** — [Qwen3](https://arxiv.org/abs/2505.09388), [MiMo-V2-Flash](https://arxiv.org/abs/2601.02780), [GLM-5](https://arxiv.org/abs/2602.15763).
    How labs deploy OPD in production.
+
+## Surveys
+
+- [A Survey of On-Policy Distillation for Large Language Models](https://arxiv.org/abs/2604.00626) (2026) — First dedicated OPD survey; organizes methods by feedback signal, teacher access mode, and loss scope.
 
 ## Taxonomy
 
@@ -168,6 +175,7 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [Revealing the Power of Post-Training via KD](https://arxiv.org/abs/2509.26497) (2025) — Offline on-policy KD: student generates, then teacher labels.
 - [TSD-KD: Explain in Your Own Words](https://arxiv.org/abs/2603.13260) (2026) — Student proposes candidates, teacher reranks, selective token distillation.
 - [SSD: Embarrassingly Simple Self-Distillation Improves Code Generation](https://arxiv.org/abs/2604.01193) (2026) — Temperature-shifted self-sampling plus SFT with no teacher or verifier; identifies precision-exploration conflict in token distributions.
+- [AdaSwitch: Balancing Exploration and Guidance in KD via Adaptive Switching](https://arxiv.org/abs/2510.07842) (2025) — Adaptively switches between on-policy student rollouts and off-policy teacher data using a context-aware divergence threshold.
 
 ### Preference, Reward-Guided, and Hybrid RL+KD
 
@@ -177,6 +185,8 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [RLTF-SD: Expanding RL via Text Feedback](https://arxiv.org/abs/2602.02482) (2026) — Internalizes text feedback via self-distillation.
 - [RLAD: Reinforcement-aware KD for LLM Reasoning](https://arxiv.org/abs/2602.22495) (2026) — Trust-region ratio distillation on student rollouts.
 - [Multi-Token Prediction via Self-Distillation](https://arxiv.org/abs/2602.06019) (2026) — Online self-distillation for multi-token prediction and faster inference.
+- [ORPO-Distill: Mixed-Policy Preference Optimization for Cross-Architecture LLM Distillation](https://arxiv.org/abs/2509.25100) (2025) — Mixed-policy teacher/student preference distillation using student-generated outputs; enables black-box cross-architecture transfer.
+- [SRPO: Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing](https://arxiv.org/abs/2604.02288) (2026) — Routes correct student rollouts to reward-based RL and failed ones to self-distillation; unifies GRPO and SDPO.
 
 ### Agent Distillation, Multimodal, and Other Extensions
 
@@ -185,6 +195,10 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [AllMem](https://arxiv.org/abs/2602.13680) (2026) — Offline on-policy distillation for long-context modeling.
 - [Video-OPD](https://arxiv.org/abs/2602.02994) (2026) — OPD for temporal video grounding in multimodal LLMs.
 - [Reinforced Attention Learning](https://arxiv.org/abs/2602.04884) (2026) — On-policy attention distillation for multimodal models.
+- [SCoRe: From Correction to Mastery via Reinforced Distillation of LLM Agents](https://arxiv.org/abs/2509.14257) (2025) — Student generates agent trajectories; teacher intervenes at first critical error for on-policy corrective distillation.
+- [VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation](https://arxiv.org/abs/2510.23497) (2025) — Text-only teacher distills reasoning into VLM student via student-generated traces with combined GRPO and OPD.
+- [X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs](https://arxiv.org/abs/2603.24596) (2026) — Student on-policy rollouts with token-level teacher feedback for cross-modal speech-LLM distillation.
+- [VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation](https://arxiv.org/abs/2603.26666) (2026) — Reverse-KL on-policy distillation bridging offline SFT and online RL for robotic manipulation.
 
 ### Precursors
 
@@ -234,7 +248,7 @@ Production training pipelines that use OPD as a post-training stage.
 
 ## Contributing
 
-Contributions welcome! Please open a PR if you know of papers, reports, or tools related to on-policy distillation.
+Contributions welcome! Please open a PR if you know of papers, reports, or tools related to on-policy distillation. See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed criteria, section placement, and formatting guidelines.
 
 - **Inclusion criteria:** The work should involve student rollouts as central to the learning signal, or directly enable OPD deployment (cross-tokenizer, frameworks, etc.).
 - **Entry format:** `[Title](url) (Year) — One-line description.`
@@ -257,4 +271,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-04-03. Coverage: core OPD papers, adjacent work, technical reports, and tooling through April 2026.*
+*Last updated: 2026-04-03. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
