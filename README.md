@@ -167,6 +167,7 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [Knowledge Distillation with Training Wheels](https://arxiv.org/abs/2502.17717) (2025) — Entropy-regularized value optimization with on-/off-policy demonstrations.
 - [Revealing the Power of Post-Training via KD](https://arxiv.org/abs/2509.26497) (2025) — Offline on-policy KD: student generates, then teacher labels.
 - [TSD-KD: Explain in Your Own Words](https://arxiv.org/abs/2603.13260) (2026) — Student proposes candidates, teacher reranks, selective token distillation.
+- [SSD: Embarrassingly Simple Self-Distillation Improves Code Generation](https://arxiv.org/abs/2604.01193) (2026) — Temperature-shifted self-sampling plus SFT with no teacher or verifier; identifies precision-exploration conflict in token distributions.
 
 ### Preference, Reward-Guided, and Hybrid RL+KD
 
@@ -256,4 +257,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-03-26. Coverage: core OPD papers, adjacent work, technical reports, and tooling through March 2026.*
+*Last updated: 2026-04-03. Coverage: core OPD papers, adjacent work, technical reports, and tooling through April 2026.*
