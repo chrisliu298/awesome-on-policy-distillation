@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Awesome On-Policy Distillation"
+type: software
+authors:
+  - family-names: "Liu"
+    given-names: "Chris Yuhao"
+repository-code: "https://github.com/chrisliu298/awesome-on-policy-distillation"
+url: "https://github.com/chrisliu298/awesome-on-policy-distillation"
+abstract: "A curated collection of papers, technical reports, frameworks, and tools for on-policy distillation of large language models."
+license: "CC0-1.0"
+date-released: "2026-01-01"
