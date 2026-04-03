@@ -265,14 +265,13 @@ Contributions welcome! Please open a PR if you know of papers, reports, or tools
 If you find this resource useful, please cite it as:
 
 ```bibtex
-@misc{awesome-on-policy-distillation,
-  title = {{awesome-on-policy-distillation}: A Curated Resource for On-Policy Distillation of Large Language Models},
-  author = {{Chris Yuhao Liu}},
+@software{awesome-on-policy-distillation,
+  title = {{Awesome On-Policy Distillation}},
+  author = {Liu, Chris Yuhao},
   year = {2026},
-  howpublished = {\url{https://github.com/chrisliu298/awesome-on-policy-distillation}},
-  note = {GitHub repository},
-  organization = {GitHub},
-  url = {https://github.com/chrisliu298/awesome-on-policy-distillation}
+  doi = {10.5281/zenodo.19411493},
+  url = {https://github.com/chrisliu298/awesome-on-policy-distillation},
+  version = {v1.0.0}
 }
 ```
 
