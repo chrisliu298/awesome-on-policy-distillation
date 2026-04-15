@@ -87,7 +87,7 @@ The fastest path to understanding the field:
 |---|---|
 | External white-box | MiniLLM, GKD, Veto, Entropy-Aware OPD, ExOPD, REOPOLD, PACED, Prefix OPD, Revisiting OPD, Rethinking OPD |
 | External black-box | Black-Box OPD / GAD, OVD |
-| Self-teacher with privileged context | OPSD, SDFT, SDPO, OPSDC, GATES, pi-Distill, RLSD |
+| Self-teacher with privileged context | OPSD, SDFT, SDPO, OPSDC, GATES, pi-Distill, RLSD, SDZero |
 | Context-conditioned | OPCD, OEL |
 | Multiple / lifecycle teachers | MiMo-V2-Flash MOPD, GLM-5, Qwen3, Baichuan-M3 |
 
@@ -98,7 +98,7 @@ The fastest path to understanding the field:
 | Compression / strong-to-weak transfer | MiniLLM, GKD, Qwen3, Prefix OPD, Rethinking OPD |
 | Post-RL consolidation / skill integration | MiMo MOPD, GLM-5, ExOPD |
 | Continual learning | SDFT, OPCD, OEL |
-| RL replacement / augmentation | SDPO, RLTF-SD, RLAD, REOPOLD, RLSD |
+| RL replacement / augmentation | SDPO, RLTF-SD, RLAD, REOPOLD, RLSD, SDZero |
 | Reasoning compression | OPSDC |
 | Black-box distillation | GAD, OVD |
 
@@ -138,6 +138,7 @@ The ~21 papers that define on-policy distillation for LLMs.
 - [GATES: Self-Distillation under Privileged Context with Consensus Gating](https://arxiv.org/abs/2602.20574) (2026) — Consensus-gated asymmetric-context self-distillation without labels or rewards.
 - [HDPO: Hybrid Distillation Policy Optimization via Privileged Self-Distillation](https://arxiv.org/abs/2603.23871) (2026) — Privileged self-distillation targeting cliff prompts where RL gradients vanish; provably recovers the KL-regularized optimal policy.
 - [RLSD: Self-Distilled RLVR](https://arxiv.org/abs/2604.03128) (2026) — Repurposes self-distillation as token-level credit assignment within GRPO; proves OPSD-style distribution matching under information asymmetry induces irreducible privileged information leakage.
+- [SDZero: Self-Revision Turns Binary Rewards into Dense Supervision](https://arxiv.org/abs/2604.12002) (2026) — Generator-reviser dual-role self-distillation requiring only binary rewards; the reviser converts outcome-level feedback into token-level supervision on student rollouts without any external teacher or demonstrations.
 
 ### Context and Experience Internalization
 
@@ -279,4 +280,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-04-14. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
+*Last updated: 2026-04-15. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
