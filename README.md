@@ -85,7 +85,7 @@ The fastest path to understanding the field:
 
 | Teacher Type | Papers |
 |---|---|
-| External white-box | MiniLLM, GKD, Veto, Entropy-Aware OPD, ExOPD, REOPOLD, PACED, Prefix OPD, Revisiting OPD |
+| External white-box | MiniLLM, GKD, Veto, Entropy-Aware OPD, ExOPD, REOPOLD, PACED, Prefix OPD, Revisiting OPD, Rethinking OPD |
 | External black-box | Black-Box OPD / GAD, OVD |
 | Self-teacher with privileged context | OPSD, SDFT, SDPO, OPSDC, GATES, pi-Distill, RLSD |
 | Context-conditioned | OPCD, OEL |
@@ -95,7 +95,7 @@ The fastest path to understanding the field:
 
 | Goal | Papers |
 |---|---|
-| Compression / strong-to-weak transfer | MiniLLM, GKD, Qwen3, Prefix OPD |
+| Compression / strong-to-weak transfer | MiniLLM, GKD, Qwen3, Prefix OPD, Rethinking OPD |
 | Post-RL consolidation / skill integration | MiMo MOPD, GLM-5, ExOPD |
 | Continual learning | SDFT, OPCD, OEL |
 | RL replacement / augmentation | SDPO, RLTF-SD, RLAD, REOPOLD, RLSD |
@@ -126,6 +126,7 @@ The ~21 papers that define on-policy distillation for LLMs.
 - [REOPOLD: Scaling Reasoning Efficiently via Relaxed On-Policy Distillation](https://arxiv.org/abs/2603.11137) (2026) — Relaxes strict imitation with reward clipping, entropy-based dynamic sampling, and explore-to-refine training.
 - [PACED: Distillation at the Frontier of Student Competence](https://arxiv.org/abs/2603.11178) (2026) — Pass-rate weighting focuses learning on the student's competence frontier.
 - [Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes](https://arxiv.org/abs/2603.25562) (2026) — Truncated reverse-KL with teacher top-K local support matching; fixes imbalanced signals, unreliable teacher guidance, and tokenizer mismatch in sampled-token OPD.
+- [Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe](https://arxiv.org/abs/2604.13016) (2026) — Mechanistic analysis of OPD dynamics; identifies compatible thinking patterns and novel teacher capability as success conditions; proposes off-policy cold start and teacher-aligned prompt selection for recovery.
 
 ### Self-Distillation
 
@@ -278,4 +279,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-04-03. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
+*Last updated: 2026-04-14. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
