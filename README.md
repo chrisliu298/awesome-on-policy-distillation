@@ -85,7 +85,7 @@ The fastest path to understanding the field:
 
 | Teacher Type | Papers |
 |---|---|
-| External white-box | MiniLLM, GKD, Veto, Entropy-Aware OPD, ExOPD, REOPOLD, PACED, Prefix OPD, Revisiting OPD, Rethinking OPD |
+| External white-box | MiniLLM, GKD, Veto, Entropy-Aware OPD, ExOPD, REOPOLD, PACED, Prefix OPD, Revisiting OPD, Rethinking OPD, Lightning OPD |
 | External black-box | Black-Box OPD / GAD, OVD |
 | Self-teacher with privileged context | OPSD, SDFT, SDPO, OPSDC, GATES, pi-Distill, RLSD, SDZero |
 | Context-conditioned | OPCD, OEL |
@@ -95,7 +95,7 @@ The fastest path to understanding the field:
 
 | Goal | Papers |
 |---|---|
-| Compression / strong-to-weak transfer | MiniLLM, GKD, Qwen3, Prefix OPD, Rethinking OPD |
+| Compression / strong-to-weak transfer | MiniLLM, GKD, Qwen3, Prefix OPD, Rethinking OPD, Lightning OPD |
 | Post-RL consolidation / skill integration | MiMo MOPD, GLM-5, ExOPD |
 | Continual learning | SDFT, OPCD, OEL |
 | RL replacement / augmentation | SDPO, RLTF-SD, RLAD, REOPOLD, RLSD, SDZero |
@@ -150,6 +150,7 @@ The ~21 papers that define on-policy distillation for LLMs.
 - [Prefix OPD: Fast and Effective On-policy Distillation from Reasoning Prefixes](https://arxiv.org/abs/2602.15260) (2026) — Distills only reasoning prefixes, cutting training FLOPs 2x-47x.
 - [OVD: On-policy Verbal Distillation](https://arxiv.org/abs/2601.21968) (2026) — Trajectory-level verbal scoring instead of token-level logit matching; reduces memory and relaxes alignment requirements.
 - [pi-Distill: Privileged Information Distillation for Language Models](https://arxiv.org/abs/2602.04942) (2026) — Training-time privileged information in agentic settings where only actions are observable.
+- [Lightning OPD: Efficient Post-Training for Large Reasoning Models with Offline On-Policy Distillation](https://arxiv.org/abs/2604.13010) (2026) — Precomputes teacher log-probs once over SFT rollouts to eliminate the live-teacher server; 4x speedup via a teacher-consistency condition.
 
 ## Adjacent and Enabling Work
 
@@ -280,4 +281,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-04-15. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
+*Last updated: 2026-04-19. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
