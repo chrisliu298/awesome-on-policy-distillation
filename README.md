@@ -89,7 +89,7 @@ The fastest path to understanding the field:
 | External black-box | Black-Box OPD / GAD, OVD |
 | Self-teacher with privileged context | OPSD, SDFT, SDPO, OPSDC, GATES, pi-Distill, RLSD, SDZero |
 | Context-conditioned | OPCD, OEL |
-| Multiple / lifecycle teachers | MiMo-V2-Flash MOPD, GLM-5, Qwen3, Baichuan-M3 |
+| Multiple / lifecycle teachers | MiMo-V2-Flash MOPD, GLM-5, Qwen3, Baichuan-M3, DeepSeek-V4 |
 
 ### By Primary Goal
 
@@ -232,6 +232,7 @@ Production training pipelines that use OPD as a post-training stage.
 | 2026 | Baichuan-M3 | Three-stage: task RL, offline policy distillation, multi-teacher OPD | [paper](https://arxiv.org/abs/2602.06570) |
 | 2026 | MobileLLM-R1.5 | Final-stage on-policy KD as primary improvement over R1 | model card |
 | 2026 | Nanbeige4-3B-Thinking | OPD preferred over off-policy for math reasoning | [model card](https://huggingface.co/Nanbeige/Nanbeige4-3B-Thinking-2510) |
+| 2026 | DeepSeek-V4 | Two-stage post-training: domain-expert SFT+GRPO, then unified model consolidation via on-policy distillation | [report](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf) |
 
 ## Frameworks, Tools, and Implementations
 
@@ -281,4 +282,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-04-19. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
+*Last updated: 2026-04-23. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
