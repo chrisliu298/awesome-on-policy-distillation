@@ -210,6 +210,7 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation](https://arxiv.org/abs/2510.23497) (2025) — Text-only teacher distills reasoning into VLM student via student-generated traces with combined GRPO and OPD.
 - [X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs](https://arxiv.org/abs/2603.24596) (2026) — Student on-policy rollouts with token-level teacher feedback for cross-modal speech-LLM distillation.
 - [VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation](https://arxiv.org/abs/2603.26666) (2026) — Reverse-KL on-policy distillation bridging offline SFT and online RL for robotic manipulation.
+- [TCOD: Exploring Temporal Curriculum in On-Policy Distillation for Multi-turn Autonomous Agents](https://arxiv.org/abs/2604.24005) (2026) — Short-to-long trajectory-depth curriculum that mitigates trajectory-level KL instability when accumulated multi-turn errors push student behavior beyond teacher support.
 
 ### Precursors
 
@@ -282,4 +283,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-04-23. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
+*Last updated: 2026-04-28. Coverage: core OPD papers, adjacent work, surveys, technical reports, and tooling through April 2026.*
