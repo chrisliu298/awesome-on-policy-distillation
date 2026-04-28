@@ -246,7 +246,7 @@ Production training pipelines that use OPD as a post-training stage.
 | veRL | Async on-policy KD trading strict on-policy guarantees for throughput | [docs](https://verl.readthedocs.io/en/latest/advance/async-on-policy-distill.html) |
 | MS-Swift | GKD and OPSD sections in the ModelScope ecosystem | [docs](https://swift.readthedocs.io/en/latest/) |
 | EasyDistill | Comprehensive KD toolkit for black-box and white-box LLM distillation | [paper](https://arxiv.org/abs/2505.20888) |
-| KDFlow | Off-policy, on-policy, and cross-tokenizer distillation via decoupled backends | [paper](https://arxiv.org/abs/2603.01875) |
+| KDFlow | Off-policy, on-policy, and cross-tokenizer distillation via decoupled backends | [paper](https://arxiv.org/abs/2603.01875), [repo](https://github.com/songmzhang/KDFlow) |
 | slime | Unified RL stack supporting on-policy distillation and hindsight hints | [repo](https://github.com/) |
 | OpenClaw-RL | Agentic RL stack with hindsight-guided OPD | [paper](https://arxiv.org/abs/2603.10165) |
 | NexRL | Dedicated on-policy distillation recipes | [repo](https://github.com/nex-agi/NexRL) |
