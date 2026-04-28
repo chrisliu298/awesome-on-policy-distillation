@@ -127,6 +127,7 @@ The ~21 papers that define on-policy distillation for LLMs.
 - [PACED: Distillation at the Frontier of Student Competence](https://arxiv.org/abs/2603.11178) (2026) — Pass-rate weighting focuses learning on the student's competence frontier.
 - [Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes](https://arxiv.org/abs/2603.25562) (2026) — Truncated reverse-KL with teacher top-K local support matching; fixes imbalanced signals, unreliable teacher guidance, and tokenizer mismatch in sampled-token OPD.
 - [Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe](https://arxiv.org/abs/2604.13016) (2026) — Mechanistic analysis of OPD dynamics; identifies compatible thinking patterns and novel teacher capability as success conditions; proposes off-policy cold start and teacher-aligned prompt selection for recovery.
+- [The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation](https://arxiv.org/abs/2604.16830) (2026) — Theoretical analysis of OPD-induced overconfidence (information asymmetry, entropy collapse, selection bias); CaOPD replaces confidence targets with student-grounded empirical success rates to decouple capability from calibration.
 
 ### Self-Distillation
 
@@ -139,6 +140,7 @@ The ~21 papers that define on-policy distillation for LLMs.
 - [HDPO: Hybrid Distillation Policy Optimization via Privileged Self-Distillation](https://arxiv.org/abs/2603.23871) (2026) — Privileged self-distillation targeting cliff prompts where RL gradients vanish; provably recovers the KL-regularized optimal policy.
 - [RLSD: Self-Distilled RLVR](https://arxiv.org/abs/2604.03128) (2026) — Repurposes self-distillation as token-level credit assignment within GRPO; proves OPSD-style distribution matching under information asymmetry induces irreducible privileged information leakage.
 - [SDZero: Self-Revision Turns Binary Rewards into Dense Supervision](https://arxiv.org/abs/2604.12002) (2026) — Generator-reviser dual-role self-distillation requiring only binary rewards; the reviser converts outcome-level feedback into token-level supervision on student rollouts without any external teacher or demonstrations.
+- [OPSDL: On-Policy Self-Distillation for Long-Context Language Models](https://arxiv.org/abs/2604.17535) (2026) — Long-context self-distillation: short-context distribution of the same model serves as a co-evolving token-level reverse-KL teacher for student rollouts under long context.
 
 ### Context and Experience Internalization
 
@@ -234,6 +236,7 @@ Production training pipelines that use OPD as a post-training stage.
 | 2026 | MobileLLM-R1.5 | Final-stage on-policy KD as primary improvement over R1 | model card |
 | 2026 | Nanbeige4-3B-Thinking | OPD preferred over off-policy for math reasoning | [model card](https://huggingface.co/Nanbeige/Nanbeige4-3B-Thinking-2510) |
 | 2026 | DeepSeek-V4 | Two-stage post-training: domain-expert SFT+GRPO, then unified model consolidation via on-policy distillation | [report](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf) |
+| 2026 | Qwen3.5-Omni | Specialist teacher distillation, then privileged-input self-distillation aligning audio-conditioned outputs to text-conditioned responses (labeled OPD by the report) | [paper](https://arxiv.org/abs/2604.15804) |
 
 ## Frameworks, Tools, and Implementations
 
