@@ -158,6 +158,7 @@ The ~21 papers that define on-policy distillation for LLMs.
 - [OVD: On-policy Verbal Distillation](https://arxiv.org/abs/2601.21968) (2026) — Trajectory-level verbal scoring instead of token-level logit matching; reduces memory and relaxes alignment requirements.
 - [pi-Distill: Privileged Information Distillation for Language Models](https://arxiv.org/abs/2602.04942) (2026) — Training-time privileged information in agentic settings where only actions are observable.
 - [Lightning OPD: Efficient Post-Training for Large Reasoning Models with Offline On-Policy Distillation](https://arxiv.org/abs/2604.13010) (2026) — Precomputes teacher log-probs once over SFT rollouts to eliminate the live-teacher server; 4x speedup via a teacher-consistency condition.
+- [Nitrobrew: Communication- and Memory-Efficient On-Policy Distillation](https://blog.tilderesearch.com/blog/nitrobrew) (2026) — Systems-level OPD optimizations from Tilde Research: hidden-state teacher→student transport (~60x less bandwidth), tile-wise online divergence kernel (~37x less memory), and an SVD-compressed variant; 1.5-3x end-to-end throughput.
 
 ## Adjacent and Enabling Work
 
