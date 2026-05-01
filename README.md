@@ -92,14 +92,14 @@ The fastest path to understanding the field:
 | External black-box | Black-Box OPD / GAD, OVD |
 | Self-teacher with privileged context | OPSD, SDFT, SDPO, OPSDC, GATES, pi-Distill, RLSD, SDZero |
 | Context-conditioned | OPCD, OEL |
-| Multiple / lifecycle teachers | MiMo-V2-Flash MOPD, GLM-5, Qwen3, Baichuan-M3, DeepSeek-V4 |
+| Multiple / lifecycle teachers | MiMo-V2-Flash MOPD, GLM-5, Qwen3, Baichuan-M3, DeepSeek-V4, CoPD |
 
 ### By Primary Goal
 
 | Goal | Papers |
 |---|---|
 | Compression / strong-to-weak transfer | MiniLLM, GKD, Qwen3, Prefix OPD, Rethinking OPD, Lightning OPD |
-| Post-RL consolidation / skill integration | MiMo MOPD, GLM-5, ExOPD |
+| Post-RL consolidation / skill integration | MiMo MOPD, GLM-5, ExOPD, CoPD |
 | Continual learning | SDFT, OPCD, OEL |
 | RL replacement / augmentation | SDPO, RLTF-SD, RLAD, REOPOLD, RLSD, SDZero |
 | Reasoning compression | OPSDC |
@@ -249,6 +249,7 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [OPD-AVMP: On-Policy Distillation of Language Models for Autonomous Vehicle Motion Planning](https://arxiv.org/abs/2604.07944) (2026) — Generalized on-policy KD for LLM-based driving planners; 5x compression at near-teacher performance.
 - [CORD: Bridging the Audio–Text Reasoning Gap via Weighted On-policy Cross-modal Distillation](https://arxiv.org/abs/2601.16547) (2026) — Audio-conditioned student rollouts; text-conditioned same model as in-model teacher; importance-weighted reverse KL on early/critical tokens plus GRPO at sequence level.
 - [Skill-SD: Skill-Conditioned Self-Distillation for Multi-turn LLM Agents](https://arxiv.org/abs/2604.10674) (2026) — Student rolls out under plain prompt; same model under skill-augmented prompt serves as token-level self-teacher for multi-turn agent training.
+- [CoPD: Co-Evolving Policy Distillation](https://arxiv.org/abs/2604.27083) (2026) — Parallel expert training with bidirectional OPD where experts co-evolve as mutual teachers during RLVR; integrates text, image, and video reasoning while avoiding both mixed-RLVR inter-capability divergence and sequential-MOPD behavioral gaps.
 
 ### Speculative Decoding (Draft-Model Training)
 
@@ -349,4 +350,4 @@ If you find this resource useful, please cite it as:
 
 ---
 
-*Last updated: 2026-04-28. Coverage: core OPD papers, adjacent work (including speculative-decoding draft-model training and self-play / iterative bootstrapping), surveys, technical reports, and tooling through April 2026.*
+*Last updated: 2026-05-01. Coverage: core OPD papers, adjacent work (including speculative-decoding draft-model training and self-play / iterative bootstrapping), surveys, technical reports, and tooling through April 2026.*
