@@ -552,6 +552,7 @@ Production training pipelines that use OPD as a post-training stage.
 | TRL | GKD, GOLD, and MiniLLM trainers; most accessible starting point | [docs](https://huggingface.co/docs/trl) |
 | NeMo-RL | Multi-teacher and cross-tokenizer OPD at scale | [docs](https://docs.nvidia.com/nemo/rl/latest/about/algorithms/on-policy-distillation.html), [repo](https://github.com/NVIDIA-NeMo/RL) |
 | veRL | Async on-policy KD trading strict on-policy guarantees for throughput | [docs](https://verl.readthedocs.io/en/latest/advance/async-on-policy-distill.html) |
+| VeRL-Omni | Multimodal RL training framework for diffusion and omni-modality models (built on verl) | [docs](https://verl-omni.readthedocs.io/en/latest/index.html), [repo](https://github.com/verl-project/verl-omni) |
 | MS-Swift | GKD and OPSD sections in the ModelScope ecosystem | [docs](https://swift.readthedocs.io/en/latest/) |
 | EasyDistill | Comprehensive KD toolkit for black-box and white-box LLM distillation | [arXiv](https://arxiv.org/abs/2505.20888) |
 | KDFlow | Off-policy, on-policy, and cross-tokenizer distillation via decoupled backends | [arXiv](https://arxiv.org/abs/2603.01875), [repo](https://github.com/songmzhang/KDFlow) |
