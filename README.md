@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <!-- entry-count-start --><a href="#contents"><img src="https://img.shields.io/badge/Entries-457-000000?style=for-the-badge&labelColor=000000" alt="Entries"></a><!-- entry-count-end -->
+  <!-- entry-count-start --><a href="#contents"><img src="https://img.shields.io/badge/Entries-460-000000?style=for-the-badge&labelColor=000000" alt="Entries"></a><!-- entry-count-end -->
   <a href="https://github.com/chrisliu298/awesome-on-policy-distillation/stargazers"><img src="https://img.shields.io/github/stars/chrisliu298/awesome-on-policy-distillation?style=for-the-badge&logo=github&logoColor=white&label=Stars&labelColor=000000&color=000000" alt="GitHub Stars"></a>
   <a href="https://github.com/chrisliu298/awesome-on-policy-distillation/network/members"><img src="https://img.shields.io/github/forks/chrisliu298/awesome-on-policy-distillation?style=for-the-badge&logo=github&logoColor=white&label=Forks&labelColor=000000&color=000000" alt="GitHub Forks"></a>
   <a href="https://github.com/chrisliu298/awesome-on-policy-distillation/commits"><img src="https://img.shields.io/github/last-commit/chrisliu298/awesome-on-policy-distillation?style=for-the-badge&logo=github&logoColor=white&label=Last%20Commit&labelColor=000000&color=000000" alt="Last Commit"></a>
@@ -341,6 +341,7 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [SimCT: Recovering Lost Supervision for Cross-Tokenizer On-Policy Distillation](https://arxiv.org/abs/2605.07711) *(2026)* — Short multi-token continuations replace exact matching; recovers teacher signal at mismatched positions.
 - [Breaking the Tokenizer Barrier: On-Policy Distillation across Model Families](https://arxiv.org/abs/2606.09456) *(2026)* — Maps tokens across mismatched tokenizers so on-policy distillation transfers teacher signal across model families, not only within one series.
 - [X-Token: Projection-Guided Cross-Tokenizer Knowledge Distillation](https://arxiv.org/abs/2605.21699) *(2026)* — Maps student vocabulary into a different teacher's via a rule-built sparse projection matrix, rescuing critical tokens that strict string-matching alignment drops.
+- [Cross-Tokenizer On-Policy Distillation via Byte-Prefix Marginalization](https://arxiv.org/abs/2607.22334) *(2026)* — Re-expresses the teacher's distribution over student tokens in shared byte space, preserving probability mass that prior cross-tokenizer alignments discard.
 
 ### Mismatch Mitigation and Student Quality
 
@@ -462,6 +463,8 @@ OPD applied to non-text-reasoning settings — agents, multimodal models, diffus
 - [Diagnosing and Calibrating Tool-Call Boundary Drift in Multi-Teacher On-Policy Distillation](https://arxiv.org/abs/2607.07050) *(2026)* — Multi-teacher on-policy distillation for tool-use agents, soft-clamping extreme per-token divergence at tool-call boundaries to curb drift while preserving gradients.
 - [Why Does Feedback-Augmented Self-Distillation Fail to Improve Retrieval-Interleaved Search Agents?](https://arxiv.org/abs/2607.17558) *(2026)* — Analyzes on-policy self-distillation on a search agent's own rollouts, diagnosing why decoding collapse makes the KL signal uninformative.
 - [DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment](https://arxiv.org/abs/2607.07820) *(2026)* — Iteratively self-distills a search agent on its own rollouts verified by a deterministic offline tool environment, needing no stronger teacher.
+- [MAPD: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search](https://arxiv.org/abs/2607.24280) *(2026)* — Feeds a style-normalized protocol to a privileged student branch whose token distributions densify sparse agentic-search rewards, bypassing proprietary teachers' hidden logits.
+- [The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation](https://arxiv.org/abs/2607.24720) *(2026)* — Isolates long-horizon planning in a controlled multi-turn environment, finding on-policy distillation has a broader effective region than GRPO.
 
 ### Multimodal and Vision-Language
 
