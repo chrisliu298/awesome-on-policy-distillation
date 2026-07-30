@@ -128,6 +128,7 @@ The papers that define on-policy distillation for LLMs.
 - [Weak-to-Strong Generalization via Direct On-Policy Distillation](https://arxiv.org/abs/2607.05394) *(2026)* — Applies a weak teacher's pre/post-RL log-ratio as a dense reward on student rollouts, transferring the RL-induced shift rather than the final policy.
 - [CoPD: Co-Evolving Policy Distillation](https://arxiv.org/abs/2604.27083) *(2026)* — Parallel expert training with bidirectional OPD; experts co-evolve as mutual teachers during RLVR.
 - [CADENCE: Closing the Reasoning Gap via Coverage-Adaptive On-Policy Distillation](https://arxiv.org/abs/2607.16955) *(2026)* — Schedules a per-token forward-to-reverse-KL mixture on student rollouts, gating the transition on student coverage of teacher tokens rather than time.
+- [Weak-to-Strong On-Policy Distillation](https://arxiv.org/abs/2607.26246) *(2026)* — Synthesizes a proxy teacher by re-anchoring a weak model pair's logit difference onto the student's base model, requiring no stronger teacher. ([Code](https://github.com/Yu-Fangxu/W2S-OPD))
 
 ### Stability and Objective Design
 
