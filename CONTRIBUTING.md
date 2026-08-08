@@ -94,9 +94,9 @@ The description must be a single sentence, **hard cap 22 words** (well-written e
 
 When adding multiple papers at once:
 
-- **Flag section growth.** If a single update would double any subsection's size, consider whether the section needs splitting or whether some entries are marginal.
-- **Prioritize gap-filling over completeness.** A paper that opens a new niche (first speech OPD, first embodied OPD) has higher priority than a fourth variant in a well-covered area.
-- **Cap awareness.** Large batches dilute curation signal. Prefer 5-8 high-confidence additions over 12+ with several borderline entries.
+- **Relevance is the bar.** Every paper meeting the inclusion criteria goes in, however crowded its area. Do not withhold a qualifying paper as "marginal" — a fourth variant in a well-covered niche still belongs on the list.
+- **Gap-filling orders, it does not gate.** A paper opening a new niche (first speech OPD, first embodied OPD) is worth leading with, but nothing qualifying is dropped for ranking below it.
+- **Flag section growth.** If a single update would double any subsection's size, say so — that signals the section may need splitting, not that entries should be cut.
 
 ## Taxonomy and reading path
 
