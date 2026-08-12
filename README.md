@@ -203,6 +203,7 @@ The papers that define on-policy distillation for LLMs.
 - [Distill Where You Fail: Recovering Learning Signals of Negative RL-Groups from Adaptive Teacher Guidance](https://arxiv.org/abs/2608.00782) *(2026)* — Applies teacher guidance only to zero-reward rollout groups, restoring gradients where group-relative reinforcement learning stalls.
 - [DAPD: Dual-Anchored Policy Distillation](https://arxiv.org/abs/2608.01735) *(2026)* — Dual self-teacher anchors constrain privileged targets, preventing unreachable guidance from destabilizing student rollouts. ([Code](https://github.com/uanu2002/DAPD))
 - [When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation](https://arxiv.org/abs/2608.03632) *(2026)* — Filters teacher signals by input grounding plus distributional extremity, suppressing confident but spurious guidance. ([Code](https://github.com/jjjyinuo/SA-OPD))
+- [Simple-OPD: Demystifying Warm-up for On-policy Distillation](https://arxiv.org/pdf/2608.06802) *(2026)* — Demystifing warm-up for OPD from both data and training perspectives. ([Code](https://github.com/Utaotao/Simple-OPD))
 
 ### Self-Distillation
 
