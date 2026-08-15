@@ -549,6 +549,7 @@ OPD applied to non-text-reasoning settings — agents, multimodal models, diffus
 - [SkillLens: Visual Skill Cards for Retrieval-Augmented GUI Action Prediction and On-Policy Distillation](https://arxiv.org/abs/2608.10775) *(2026)* — Visual skill cards privilege the teacher on student action prefixes to internalize GUI procedures without runtime retrieval.
 - [LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation](https://arxiv.org/abs/2608.11967) *(2026)* — Distills privileged reflection on student agent trajectories through a fast channel calibrated by outcome-based reinforcement learning.
 - [Beyond Outcome Rewards: Step-Level Self-Distilled Policy Optimization for Deep Search Agents](https://arxiv.org/abs/2608.12764) *(2026)* — Converts privileged self-teacher disagreement into step-level advantages on failed search trajectories, preserving reward direction. ([Code](https://github.com/hkust-nlp/SSPO))
+- [Teach the Magnitude, Not the Direction: Verifier-Bounded Credit Assignment for Multi-Turn Multi-step LLM Agents](https://arxiv.org/abs/2608.13179) *(2026)* — Uses a privileged self-teacher to modulate verifier-directed token credit across multi-turn agent rollouts.
 
 ### Multimodal and Vision-Language
 
@@ -628,6 +629,7 @@ OPD applied to non-text-reasoning settings — agents, multimodal models, diffus
 - [Distilling Physical Priors into Streaming World Models](https://arxiv.org/abs/2608.07981) *(2026)* — Matches causal self-rollouts to a physics-aware diffusion teacher before routing local physical rewards to aligned denoising actions.
 - [HPSD: Hybrid-Policy Self-Distillation for Text-Image-to-Video Diffusion Models](https://arxiv.org/abs/2608.13205) *(2026)* — Anchors student video sub-trajectories to privileged teacher states for condition-matched hybrid-policy self-distillation. ([Code](https://github.com/Bujiazi/HPSD))
 - [Context-Matched Distillation: Teacher Causality for Autoregressive Video Distillation](https://arxiv.org/abs/2608.13391) *(2026)* — Matches causal-teacher scores to student-generated video prefixes for context-consistent few-step distillation.
+- [Alaya-EVOKE: From Linear-Scaling Supervision to Endless World](https://arxiv.org/abs/2608.13546) *(2026)* — Matches long-horizon teacher scores across self-forced video rollouts to prevent drift in a few-step world model. ([Code](https://github.com/SII-YuanyangYin/Evoke))
 
 ### Embodied, Robotics, and Control
 
@@ -642,6 +644,7 @@ OPD applied to non-text-reasoning settings — agents, multimodal models, diffus
 - [ROAD-VLA: Robust Online Adaptation via Self-Distillation for Vision-Language-Action Models](https://arxiv.org/abs/2606.25800) *(2026)* — Builds an action-space proximal teacher by perturbing the policy's own action logits with advantage estimates, converting sparse rewards into dense supervision.
 - [Distilling Realizable Students from Unrealizable Teachers](https://arxiv.org/abs/2505.09546) *(2025)* — Queries privileged teachers only at critical student-visited states, combining realizable guidance with autonomous recovery rollouts.
 - [LeAct: Learning to Reason from Expert Actions](https://arxiv.org/abs/2607.21856) *(2026)* — Selects student-generated reasoning by its recovery of expert actions, transferring latent decision logic without expert rationales.
+- [FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving](https://arxiv.org/abs/2608.13395) *(2026)* — Routes failed driving rollouts to a hidden-future self-teacher for answer-token supervision. ([Code](https://github.com/forever-free1/FIRE-VLA))
 
 ### Speculative Decoding (Draft-Model Training)
 
