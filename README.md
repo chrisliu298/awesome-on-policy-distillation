@@ -747,6 +747,7 @@ Production training pipelines that use OPD as a post-training stage.
 | 2026 | Audex | Cascade RL + multi-domain OPD (Nemotron-Cascade lineage), preserving text intelligence in unified audio-text model | [arXiv](https://arxiv.org/abs/2607.05196) |
 | 2026 | OvisOCR2 | 0.8B OCR student distilled from a 4B RL teacher via top-k reverse-KL on its own page-output rollouts | [arXiv](https://arxiv.org/abs/2607.13639) |
 | 2026 | Gryphon-v2 | Generate-and-rank recommender replacing a cascade through teacher-ranked student candidate rollouts | [arXiv](https://arxiv.org/abs/2608.06213) |
+| 2026 | TaoLive HAT | Base-model OPD restores general instruction following after domain SFT within a harness-adaptation pipeline | [arXiv](https://arxiv.org/abs/2608.15763) |
 
 ## Frameworks and Implementations
 
