@@ -312,6 +312,7 @@ The papers that define on-policy distillation for LLMs.
 - [Mitigating Rubric Interference in LLM Judges via On-Policy Self-Distillation](https://arxiv.org/abs/2608.14684) *(2026)* — Anchors multi-rubric judging to the model's own single-rubric verdicts through on-policy self-distillation, removing interference without external supervision.
 - [SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation](https://arxiv.org/abs/2608.21500) *(2026)* — Scores injected-input rollouts against the initialization model reading clean input, giving token-level defense signal where sequence-level preference training fails. ([Code](https://github.com/pppyb/SecOPD))
 - [Routing Divergence Is Not Evidence of Behavioral Influence in Same-Weight MoE Self-Distillation](https://arxiv.org/abs/2608.15787) *(2026)* — Decomposes MoE self-distillation into routing and content terms, showing router movement barely shifts outputs while content supervision does.
+- [Aha-Flow Distillation: Flow Markers Matter in LLM Reasoning](https://arxiv.org/abs/2609.07036) *(2026)* — **Aha-Flow Distillation** improves reasoning by pairing concise solution supervision with rewritten flow-style chain-of-thought during on-policy self-distillation, boosting math benchmark scores without changing inference instructions. ([Code](https://github.com/Wang-Xiaodong1899/Aha-Flow-Distillation))
 
 ### Context and Experience Internalization
 
