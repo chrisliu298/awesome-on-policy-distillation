@@ -612,6 +612,7 @@ OPD applied to non-text-reasoning settings — agents, multimodal models, diffus
 - [Where to Look Matters: On-Policy Self-Distillation for Long-Video Understanding](https://arxiv.org/abs/2608.25356) *(2026)* — Distills a clue-interval-conditioned self-teacher into a full-video student, using privileged temporal focus instead of ground-truth answer labels.
 - [Self-Supervised Visual On-Policy Distillation](https://arxiv.org/abs/2608.14144) *(2026)* — Creates teacher-student asymmetry by strongly augmenting the student's view rather than privileging the teacher, needing no annotations or stronger model.
 - [Reason in the Words You Speak: Idiolectal Paraphrasing Off-Policy Traces for Reasoning Distillation in VideoLLMs](https://arxiv.org/abs/2608.26684) *(2026)* — Rewrites privileged teacher traces into the student's own vocabulary before GRPO, preventing gradient clipping on low-probability reasoning tokens.
+- [Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World](https://arxiv.org/abs/2609.23038) *(2026)* — Distills a self-teacher conditioned on ordered state-transition traces into the video-only student's reasoning tokens, targeting long-horizon spatial reasoning. ([Code](https://github.com/ZJU-OmniAI/Spatial-Interactor))
 
 ### Speech and Audio
 
