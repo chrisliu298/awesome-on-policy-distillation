@@ -576,7 +576,7 @@ OPD applied to non-text-reasoning settings — agents, multimodal models, diffus
 - [OPDSearch+: On-Policy Distillation with RL Refinement for Search-Augmented Reasoning](https://arxiv.org/abs/2608.24310) *(2026)* — Distills a frozen off-the-shelf teacher over live-search rollouts to reshape the policy before RL, needing no task-specific teacher training.
 - [Trust Is Not Enough: Influence Calibration for On-Policy Self-Distillation in Agentic RL](https://arxiv.org/abs/2608.14945) *(2026)* — Weights self-teacher tokens by their first-order influence on the RL surrogate, replacing teacher-trust allocation that ignores the policy objective. ([Code](https://github.com/lanqz7766/Influence-Calibration-for-On-Policy-Self-Distillation-in-Agentic-RL))
 - [DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents](https://arxiv.org/abs/2608.18524) *(2026)* — Supervises only the recovery steps after a rollout's critical breakpoint, avoiding the diversity collapse full-trajectory imitation causes.
-- [UOPD: Uncertainty-Aware Intervention for On-Policy Distillation of Multi-Turn Agents](https://arxiv.org/abs/2609.34036) *(2026)* — Uses teacher confidence to target corrective interventions at high-uncertainty turns in multi-turn agent rollouts. ([Code](https://github.com/onepounchman/UOPD))
+- [UOPD: Uncertainty-Aware Intervention for On-Policy Distillation of Multi-Turn Agents](https://arxiv.org/abs/2609.34036) *(2026)* — Unifies on-policy distillation and SFT through selective intervention guided by teacher uncertainty for multi-turn agents. ([Code](https://github.com/onepounchman/UOPD))
 
 ### Multimodal and Vision-Language
 
