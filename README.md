@@ -81,6 +81,7 @@ A fast path through the field:
 - [From Gradients to Capabilities: Understanding Multi-Teacher On-Policy Distillation](https://arxiv.org/abs/2610.02179) *(2026)* — Analyzes how loss averaging, Adam momentum, and BF16 rounding mute differences between multi-teacher OPD signals.
 - [Divergence controls entropy in distillation](https://arxiv.org/abs/2610.03529) *(2026)* — Proves forward KL inflates and reverse KL deflates student entropy, attributing OPD's lower entropy to the divergence, not sampling.
 - [No Task Vector Is an Island: A Comprehensive Study on the Composability of Task Vectors from On-Policy Distillation](https://arxiv.org/abs/2609.39405) *(2026)* — Finds OPD task vectors compose with their RL teachers' and across tasks better than RL task vectors.
+- [More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning](https://arxiv.org/abs/2610.19789) *(2026)* — Benchmarks agentic self-distillation against GRPO with shared evaluation, assessing performance, training stability, and computational cost. ([Code](https://github.com/aim-uofa/Self-Distillation-AgentRL))
 
 ### Essays, Blog Posts, and Walkthroughs
 
