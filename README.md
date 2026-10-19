@@ -548,6 +548,7 @@ Papers that are not canonical OPD but matter for understanding or deploying it.
 - [PromptKD: Distilling Student-Friendly Knowledge for Generative Language Models via Prompt Tuning](https://arxiv.org/abs/2402.12842) *(2024)* — Prompt-tunes the teacher to emit student-friendly targets, distilled on the student's own generations to ease exposure bias.
 - [AllMem](https://arxiv.org/abs/2602.13680) *(2026)* — Offline on-policy distillation for long-context modeling.
 - [On Teacher Hacking in Language Model Distillation](https://arxiv.org/abs/2502.02671) *(2025)* — Diagnoses students exploiting fixed teacher data, showing fresh student-generated outputs prevent the resulting objective failure.
+- [Learning from Interaction Experience via Localized Context Distillation](https://arxiv.org/abs/2610.21427) *(2026)* — Distills feedback-guided teacher corrections only within localized spans anchored to student-generated prefixes. ([Code](https://github.com/zz-haooo/LoCD))
 
 ### Preference, Reward-Guided, and Hybrid RL+KD
 
