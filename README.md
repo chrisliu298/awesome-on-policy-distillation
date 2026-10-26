@@ -286,6 +286,7 @@ The papers that define on-policy distillation for LLMs.
 - [Teaching a Moving Student: Rethinking the Curriculum of On-Policy Distillation](https://arxiv.org/abs/2609.25048) *(2026)* — Adds a gradient-triggered curriculum that revisits initial-student rollouts, since evolving students abandon still-informative early prefixes.
 - [Influence-Directed Distillation: Solving the Diversity Bottleneck in Sampled-Token On-Policy Distillation](https://arxiv.org/abs/2608.29846) *(2026)* — Restores teacher diversity in sampled-token OPD by steering updates away from entropy-contracting positions using a first-order influence proxy.
 - [GVPO++: Group Variance Policy Optimization for LLM Post-Training and On-Policy Distillation](https://arxiv.org/abs/2609.21432) *(2026)* — Extends a KL-constrained group-variance policy optimizer to OPD without importance sampling, supporting a broad family of objectives.
+- [AOPD: When to Follow the Teacher](https://arxiv.org/abs/2610.31563) *(2026)* — Weights teacher supervision by counterfactual advantage under the student, estimated from student rollouts and terminal rewards without intervention rollouts. ([Code](https://github.com/Helloworld10011/AOPD))
 
 ### Self-Distillation
 
