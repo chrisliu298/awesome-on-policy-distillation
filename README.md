@@ -105,6 +105,7 @@ A fast path through the field:
 - [Self-Distilled Reasoner: On-Policy Self-Distillation](https://siyan-zhao.github.io/blog/2026/opsd/) *(2026)* — Author walkthrough deriving on-policy self-distillation from a privileged self-teacher as dense token-wise distribution matching, with a policy-gradient interpretation.
 - [On-policy Distillation](https://anukriti-ranjan.medium.com/on-policy-distillation-91e296b34c8d) *(2026)* — Accessible long-form guide framing on-policy distillation as teacher-graded student trajectories that fix exposure bias, built around the GKD loop.
 - [Understanding Self-Distillation and Privileged Information Distillation](https://emilianopp.github.io/Privileged-Information-Distillation-and-Self-Distillation/) *(2026)* — Walkthrough deriving self-distillation and privileged-information distillation through an RL-as-variational-inference lens, spanning reverse-KL self-teachers to reward-tilted joint training.
+- [Auditing the Teaching Signal in On-Policy Self-Distillation](https://skartik04.github.io/blog/does-a-privileged-teacher-teach/) *(2026)* — Token-level audit of OPSD runs (losses, KL spikes, and where the privileged teacher pushes back) asking whether the self-teacher transfers a real teaching signal or mostly formatting and surface corrections.
 
 ## Core OPD Papers
 
